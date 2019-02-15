@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoveCollectionCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WOT-c5-bi9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fho-5j-Inw">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="o2p-U2-lPO">
+                                        <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHJ-IN-tEV">
+                                                    <rect key="frame" x="2" y="2" width="96" height="96"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZBH-Xe-9tX">
+                                                    <rect key="frame" x="29" y="40" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.89583333330000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="tHJ-IN-tEV" firstAttribute="top" secondItem="o2p-U2-lPO" secondAttribute="top" constant="2" id="0tv-CC-Wwr"/>
+                                            <constraint firstAttribute="trailing" secondItem="tHJ-IN-tEV" secondAttribute="trailing" constant="2" id="6a3-XE-rAM"/>
+                                            <constraint firstItem="ZBH-Xe-9tX" firstAttribute="centerX" secondItem="o2p-U2-lPO" secondAttribute="centerX" id="AVL-5M-eAP"/>
+                                            <constraint firstAttribute="bottom" secondItem="tHJ-IN-tEV" secondAttribute="bottom" constant="2" id="IBp-p3-5Ih"/>
+                                            <constraint firstItem="ZBH-Xe-9tX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o2p-U2-lPO" secondAttribute="topMargin" constant="4" id="U8e-FR-xje"/>
+                                            <constraint firstItem="tHJ-IN-tEV" firstAttribute="leading" secondItem="o2p-U2-lPO" secondAttribute="leading" constant="2" id="cC3-pf-JlI"/>
+                                            <constraint firstItem="ZBH-Xe-9tX" firstAttribute="centerY" secondItem="o2p-U2-lPO" secondAttribute="centerY" id="hph-tZ-gfh"/>
+                                            <constraint firstItem="ZBH-Xe-9tX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="o2p-U2-lPO" secondAttribute="leadingMargin" constant="4" id="z19-mF-LeI"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlusCell" id="WOR-9c-ccZ">
+                                        <rect key="frame" x="137.5" y="10" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEr-C0-HRT">
+                                                    <rect key="frame" x="2" y="2" width="96" height="96"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＋" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lhy-ov-pnn">
+                                                    <rect key="frame" x="38" y="35.5" width="24.5" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
+                                        <constraints>
+                                            <constraint firstItem="lhy-ov-pnn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WOR-9c-ccZ" secondAttribute="topMargin" constant="4" id="4pC-eS-tnR"/>
+                                            <constraint firstItem="YEr-C0-HRT" firstAttribute="top" secondItem="WOR-9c-ccZ" secondAttribute="top" constant="2" id="CJO-kh-Yf2"/>
+                                            <constraint firstAttribute="trailing" secondItem="YEr-C0-HRT" secondAttribute="trailing" constant="2" id="EDQ-9b-LTX"/>
+                                            <constraint firstItem="YEr-C0-HRT" firstAttribute="leading" secondItem="WOR-9c-ccZ" secondAttribute="leading" constant="2" id="JoJ-Yh-saI"/>
+                                            <constraint firstItem="lhy-ov-pnn" firstAttribute="centerY" secondItem="WOR-9c-ccZ" secondAttribute="centerY" id="mqZ-Hm-9tx"/>
+                                            <constraint firstAttribute="bottom" secondItem="YEr-C0-HRT" secondAttribute="bottom" constant="2" id="uY5-eZ-yCV"/>
+                                            <constraint firstItem="lhy-ov-pnn" firstAttribute="centerX" secondItem="WOR-9c-ccZ" secondAttribute="centerX" id="vbZ-iS-wIy"/>
+                                            <constraint firstItem="lhy-ov-pnn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WOR-9c-ccZ" secondAttribute="leadingMargin" constant="4" id="z4c-tq-SsL"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KAq-rQ-tY6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0aC-VR-uqq"/>
+                                    <outletCollection property="gestureRecognizers" destination="5Sh-gw-HVg" appends="YES" id="t3H-L0-DYB"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WOT-c5-bi9" secondAttribute="bottom" id="JG4-vT-SMR"/>
+                            <constraint firstItem="WOT-c5-bi9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NMT-Wq-WoV"/>
+                            <constraint firstItem="WOT-c5-bi9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="l2I-zb-pD8"/>
+                            <constraint firstItem="WOT-c5-bi9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vfz-q2-gy8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="WOT-c5-bi9" id="gDS-2B-LRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.29999999999999999" id="5Sh-gw-HVg">
+                    <connections>
+                        <action selector="actGesLTap:" destination="BYZ-38-t0r" id="Lmj-jQ-wWb"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

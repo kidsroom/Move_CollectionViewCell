@@ -18,3 +18,5 @@ Main.storyboard には、UICollectionViewとセルを配置しています。
 https://itunes.apple.com/jp/app/id1437700408?mt=8
 にて公開しております。
 
+端末での動きはyoutubeでも公開しています。
+https://youtu.be/mulX5VgLCwk
