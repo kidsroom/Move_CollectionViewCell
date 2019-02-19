@@ -1,4 +1,4 @@
-# MoveCollectionCell
+# MoveCollectionViewCell
 
 UICollectionViewCellをヌルヌルと移動させます。
 並べ替えたセル位置に対し、元となる配列の入れ替えも行なっています。
